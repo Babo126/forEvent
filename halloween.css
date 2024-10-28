@@ -1,0 +1,100 @@
+/* halloween.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    background-image: url("ola.png");
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: #ff7518;
+  }
+  
+  /* 通用容器樣式 */
+  #content-container,
+  #content-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #content-container {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  #message {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff7518;
+    color: #1b1b1b;
+    margin-top: 10px;
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  .ghost {
+    font-size: 2em;
+    position: absolute;
+  }
+  
+  /* 響應式設計 */
+  @media (max-width: 768px) {
+    button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  
+    #content-container,
+    #content-container2 {
+      padding: 15px;
+    }
+  
+    .ghost {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      padding: 6px 12px;
+      font-size: 0.8em;
+    }
+  
+    #content-container,
+    #content-container2 {
+      padding: 10px;
+    }
+  
+    #message {
+      padding: 10px;
+    }
+  
+    .ghost {
+      font-size: 1.2em;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  }
+  
