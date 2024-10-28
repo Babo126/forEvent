@@ -72,7 +72,7 @@ function bounceMove(element) {
   
   // 點擊「點我」按鈕後顯示訊息
   document.getElementById("trickButton").addEventListener("click", function() {
-    window.open("https://imgur.com/e9twWaR", "_blank");
+    window.open("https://imgur.com/69dB8wW", "_blank");
     document.getElementById("content-container2").style.display = "flex";
     document.getElementById("content-container").style.display = "none";
     document.getElementById("trickButton").style.display = "none";
